@@ -13,7 +13,6 @@ public class Funcionarios {
 	Object[] cargo = {"Gerente", "Atendente", "Açougueiro", "Secretária", "Almoxarife", "Padeiro", "Estagiário"};
 	int gerente = 0, atendente = 0, acougueiro = 0, secretaria = 0, almoxarife = 0, padeiro = 0, estagiario = 0;
 	
-	//Laço
 	public void laco(){
 		int continuar = 0;
 		do{
@@ -27,7 +26,6 @@ public class Funcionarios {
 		exibir();
 	}
 	
-	//Validar nome
 	public void validarNome(){
 		boolean valida = false;
 		do{
@@ -39,14 +37,13 @@ public class Funcionarios {
 			}
 		}while(valida == false);
 	}
-	//Perguntas
+
 	public void perguntas(){
 		idade = Integer.parseInt(JOptionPane.showInputDialog("Informe a idade do funcionário:"));
 		variavel1 = JOptionPane.showInputDialog(null, "Informe o gênero do funcionário:", "\n", JOptionPane.PLAIN_MESSAGE, null, genero, "");
 		variavel2 = JOptionPane.showInputDialog(null, "Informe o cargo do funcionário:", "\n", JOptionPane.PLAIN_MESSAGE, null, cargo, "");
 	}
-	
-	//Contabilizar Genêro
+
 	public void somaGenero(){
 		if(variavel1.equals("Masculino")){
             masculino++;
@@ -54,8 +51,7 @@ public class Funcionarios {
             feminino++;
         }
 	}
-	
-	//Contabilizar Cargos
+
 	public void somaCargo(){
 		if(variavel2.equals("Gerente")){
             gerente++;
@@ -73,8 +69,7 @@ public class Funcionarios {
             estagiario++;
         }
 	}
-	
-	//Contabilizar idade
+
 	public void somaIdade(){
 		if(idade >= 18){
             maiorDe18++;
@@ -82,8 +77,7 @@ public class Funcionarios {
         	menorDe18++;
         }
 	}
-	
-	//Exibir
+
 	public void exibir(){
 		String msg = "*****FUNCIONÁRIOS*****";
 				msg+= "\n\nGênero:";
