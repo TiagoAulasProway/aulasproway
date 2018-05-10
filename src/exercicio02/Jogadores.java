@@ -5,7 +5,6 @@ import javax.swing.JOptionPane;
 public class Jogadores {
 	int indice = 0;
 	String[] nome = new String[10];
-	int jogadores = 0;
 	int[] idade = new int[10];
 	int maiorIdade = 0;
 	double[] altura = new double[10];
@@ -15,12 +14,11 @@ public class Jogadores {
 
 	public void laco(){
 		int continuar = 0;
-		validarNome();
-		
-		validarIdade();
-		validarAltura();
-		validarPeso();
 		do{
+			validarNome();		
+			validarIdade();
+			validarAltura();
+			validarPeso();
 			continuar = JOptionPane.showConfirmDialog(null, "Deseja continuar?", "", 0);
 			if(continuar == 0){
 				indice++;
