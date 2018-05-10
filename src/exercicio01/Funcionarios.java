@@ -77,15 +77,14 @@ public class Funcionarios {
         	menorDe18++;
         }
 	}
-
+                
 	public void exibir(){
 		String msg = "*****FUNCIONÁRIOS*****";
 				msg+= "\n\nGênero:";
 				msg+= "\nMasculino - "+masculino;
 				msg+= "\nFeminino - "+feminino;
-				msg+= "\n\nMaiores de 18:";
-				msg+= "\n"+maiorDe18;
-				msg+= "\n"+menorDe18;
+				msg+= "\n\nMaiores de 18: "+maiorDe18;
+				msg+= "\nMenores de 18: "+menorDe18;
 				msg+= "\n\nCargo:";
 				msg+= "\nGerente - "+gerente;
 				msg+="\nAtendente - "+atendente;
