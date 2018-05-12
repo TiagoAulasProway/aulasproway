@@ -3,8 +3,8 @@ package exercicio02;
 public class Main {
 
 	public static void main(String[] args) {
-		Jogadores cadastro = new Jogadores();
-		cadastro.laco();
+		Jogadores executar = new Jogadores();
+		executar.laco();
 
 	}
 
